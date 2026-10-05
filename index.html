@@ -1,33 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-    <title>my website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>रनूप कुमार - प्रोफेशनल पोर्टफोलियो</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; background-color: #f4f7f6; color: #333; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        header { text-align: center; border-bottom: 3px solid #007bff; padding-bottom: 20px; margin-bottom: 30px; }
+        header h1 { color: #007bff; font-size: 2.2rem; margin-bottom: 10px; }
+        header p { font-size: 1.1rem; color: #666; margin-bottom: 10px; }
+        .contact-info { margin-top: 10px; font-size: 1rem; color: #444; }
+        .contact-link { color: #007bff; text-decoration: none; font-weight: bold; }
+        .contact-link:hover { text-underline-position: under; text-decoration: underline; }
+        h2 { color: #007bff; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 30px; margin-bottom: 15px; font-size: 1.5rem; }
+        .item { margin-bottom: 20px; }
+        .item-title { font-weight: bold; font-size: 1.1rem; color: #222; display: flex; justify-content: space-between; flex-wrap: wrap; }
+        .item-subtitle { font-style: italic; color: #666; font-size: 0.95rem; margin-bottom: 5px; }
+        ul { list-style-type: square; margin-left: 20px; color: #444; }
+        li { margin-bottom: 5px; }
+        .social-links { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; }
+        .btn { display: inline-block; padding: 10px 20px; margin: 5px; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .fb { background-color: #1877f2; }
+        .wa { background-color: #25d366; }
+        .btn:hover { opacity: 0.9; }
+        @media (max-width: 600px) { .item-title { flex-direction: column; } }
+    </style>
 </head>
-<body style="background-color: lightblue;">
+<body>
 
-    <h1 style="color: darkblue; text-align: center;">mera naam ranoop kumar hai</h1>
-    <p style="text-align: center;">mene 12th pass ki aur mere pass 1 saal ka computer diploma hai.</p>
-    
-    <div style="text-align: center;">
-        <img src="myphoto.jpeg" width="300">
+<div class="container">
+    <header>
+        <h1>रनूप कुमार (Ranoop Kumar)</h1>
+        <p>आपका मेरी वेबसाइट पर स्वागत है | Welcome to my Portfolio</p>
+        <div class="contact-info">
+            <p>📧 Email: <a href="mailto:ranoop.kumarpandit@gmail.com" class="contact-link">ranoop.kumarpandit@gmail.com</a></p>
+            <p>📱 Mobile: <a href="tel:+919816860061" class="contact-link">+91 98168 60061</a></p>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Experience (कार्य अनुभव)</h2>
+        <div class="item">
+            <div class="item-title">1. Supervisor</div>
+            <div class="item-subtitle">Eastman Auto & Power Ltd., Baddi, Solan (H.P.)</div>
+            <ul>
+                <li>Managed daily assembly line operations and team workflow.</li>
+                <li>Ensured strict quality control and safety standards.</li>
+            </ul>
+        </div>
+        <div class="item">
+            <div class="item-title">2. Store Assistant</div>
+            <div class="item-subtitle">Surya Cons Private Limited, Teesta W.B. Railway Project</div>
+            <ul>
+                <li>Maintained accurate inventory and stock management records.</li>
+                <li>Handled incoming and outgoing materials for the railway project.</li>
+            </ul>
+        </div>
+        <div class="item">
+            <div class="item-title">3. Dispatcher</div>
+            <div class="item-subtitle">RMC Pvt. Ltd., Amritsar</div>
+            <ul>
+                <li>Coordinated logistics and planned vehicle dispatch schedules.</li>
+                <li>Managed dispatch logs and ensured timely deliveries.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education & Certifications (शिक्षा)</h2>
+        <div class="item">
+            <div class="item-title">Diploma in Software Technology & Application <span>(2005 - 2006)</span></div>
+            <div class="item-subtitle">VKCC - Vishw Kirti Computer Center, Chamba (H.P.) | Grade A+</div>
+        </div>
+        <div class="item">
+            <div class="item-title">Vocational Course Certificate (Art & Craft) <span>(2008)</span></div>
+            <div class="item-subtitle">State Council for Vocational Training, Hamirpur (H.P.)</div>
+        </div>
+        <div class="item">
+            <div class="item-title">12th Pass (Higher Secondary)</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Languages (भाषाएं)</h2>
+        <ul>
+            <li>Hindi (Native / मातृभाषा)</li>
+            <li>English (Professional Text Comprehension / व्यावसायिक समझ)</li>
+            <!-- नई भाषाएं यहाँ जोड़ी गई हैं -->
+            <li>Himachali (Spoken / बोलचाल)</li>
+            <li>Punjabi (Spoken & Understanding / बोलचाल और समझ)</li>
+        </ul>
+    </section>
+
+    <div class="social-links">
+        <a href="https://facebook.com" target="_blank" class="btn fb">Facebook Profile</a>
+        <a href="https://wa.me" target="_blank" class="btn wa">WhatsApp Chat</a>
     </div>
-<p style="text-align: center; color: darked; font size: 20px;">आप सभी का मेरी बेबसाइट पर स्वागत है 
-    <div style="text-align: center; margin-top: 20px;">
-   <a href="https://facebook.com" style="margin: 10px; color: blue; font-size: 20px; text-decoration: none; font-weight: bold;">फेसबुक (Facebook)</a>
-    <a href="https://wa.me"919816860061 style="margin: 10px; color: green; font-size: 20px; text-decoration: none; font-weight: bold;">व्हाट्सएप (WhatsApp)</a>
+</div>
+
 </body>
-<h2 style="text-align: center; color: darkblue; margin-top: 30px;">PROFESSIONAL EXPERIENCE</h2>
-<p style="text-align: center; font-size: 18px; margin: 15px 5px 5px 5px;"><b>1. Supervisor</b> | Eastman Auto & Power Ltd., Baddi, Solan, Himachal Pradesh</p>
-<p style="text-align: center; font-size: 18px; margin: 15px 5px 5px 5px;"><b>2. Store Assistant</b> | Surya Cons Private Limited, Teesta W.B. Railway Project</p>
-<p style="text-align: center; font-size: 18px; margin: 15px 5px 5px 5px;"><b>3. Dispatcher</b> | RMC Pvt. Ltd., Amritsar</p>
 </html>
-<h2 style="text-align: center; color: darkblue; margin-top: 30px;">EDUCATION & CERTIFICATIONS</h2>
-<p style="text-align: center; font-size: 18px; margin: 5px;"><b>Diploma in Software Technology & Application (Grade A+)</b></p>
-<p style="text-align: center; font-size: 16px; color: gray; margin: 5px;">VKCC - Vishw Kirti Computer Center, Chamba (H.P.) | 2005 to 2006</p>
-<p style="text-align: center; font-size: 18px; margin: 15px 5px 5px 5px;"><b>Vocational Course Certificate (Diploma Course in Art & Craft)</b></p>
-<p style="text-align: center; font-size: 16px; color: gray; margin: 5px;">State Council for Vocational Training, Hamirpur (H.P.) | Year: 2008</p>
-
-<h3 style="text-align: center; color: darkblue; margin-top: 25px;">LANGUAGES KNOWN</h3>
-<p style="text-align: center; font-size: 16px; margin: 5px;">Hindi (Native) | English (Professional Text Comprehension)</p>
-
-<p style="text-align: center; font-size: 14px; color: #555; font-style: italic; margin-top: 30px;">"I hereby declare that all the information mentioned above is true and correct."</p>
