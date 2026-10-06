@@ -3,169 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>रनूप कुमार - प्रोफेशनल पोर्टफोलियो</title>
-    <style></style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; line-height: 1.6; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); color: #2d3748; padding: 30px 20px; min-height: 100vh; }
-        .container { max-width: 850px; margin: 0 auto; background: #ffffff; padding: 50px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); border-top: 8px solid #1a365d; }
-        
-        header { text-align: center; margin-bottom: 40px; padding-bottom: 30px; border-bottom: 2px dashed #e2e8f0; }
-        .profile-img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 5px solid #fff; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease; }
-        .profile-img:hover { transform: scale(1.05); }
-        
-        header h1 { color: #1a365d; font-size: 2.5rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.5px; }
-        header p { font-size: 1.15rem; color: #4a5568; font-weight: 500; margin-bottom: 15px; }
-        
-        .contact-info { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; margin-top: 15px; }
-        .contact-item { background: #f7fafc; padding: 8px 18px; border-radius: 30px; font-size: 0.95rem; border: 1px solid #e2e8f0; display: flex; align-items: center; gap: 8px; }
-        .contact-link { color: #2b6cb0; text-decoration: none; font-weight: 600; }
-        .contact-link:hover { text-decoration: underline; }
-        
-        h2 { color: #1a365d; font-size: 1.6rem; font-weight: 700; margin-top: 40px; margin-bottom: 20px; display: flex; align-items: center; border-left: 5px solid #2b6cb0; padding-left: 12px; }
-        
-        .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: all 0.3s ease; }
-        .card:hover { transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.05); border-color: #cbd5e0; }
-        
-        .item-title { font-weight: 700; font-size: 1.2rem; color: #2d3748; margin-bottom: 4px; }
-        .item-subtitle { color: #718096; font-size: 0.95rem; font-weight: 500; margin-bottom: 12px; display: flex; justify-content: space-between; flex-wrap: wrap; }
-        
-        ul { list-style: none; }
-        ul li { position: relative; padding-left: 20px; margin-bottom: 8px; color: #4a5568; font-size: 1rem; }
-        ul li::before { content: "▪️"; color: #2b6cb0; position: absolute; left: 0; top: -1px; font-size: 1.2rem; }
-        
-        .skills-grid { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 15px; }
-        .skill-tag { background: linear-gradient(135deg, #ebf8ff 0%, #cee7ff 100%); color: #2b6cb0; padding: 8px 18px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; border: 1px solid #bee3f8; transition: all 0.2s; }
-        .skill-tag:hover { background: #2b6cb0; color: #fff; }
-        
-        .lang-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; }
-        .lang-item { background: #f7fafc; padding: 12px; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; font-weight: 600; }
-        .lang-item span { display: block; font-size: 0.85rem; color: #718096; font-weight: 400; margin-top: 4px; }
-        
-        .social-links { text-align: center; margin-top: 50px; padding-top: 30px; border-top: 2px solid #e2e8f0; }
-        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 35px; margin: 8px; color: white; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: all 0.3s ease; }
+    <title>रनूप कुमार | पोर्टफोलियो</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #ebf8ff 0%, #cee7ff 100%);
+            color: #233748;
+            padding: 30px 20px;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+            border-top: 8px solid #1a365d;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px dashed #e2e8f0;
+        }
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            color: #1a365d;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .english-name {
+            font-size: 1.8rem;
+            color: #2b6cb0;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        header p {
+            font-size: 1.15rem;
+            color: #4a5568;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: #1a365d;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e2e8f0;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 35px;
+            margin: 8px;
+            color: white;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+        }
         .fb { background: #1877f2; }
         .wa { background: #25d366; }
-        .btn:hover { opacity: 0.95; transform: translateY(-3px); box-shadow: 0 6px 15px rgba(0,0,0,0.2); }
         
-        @media (max-width: 650px) { .container { padding: 25px; } header h1 { font-size: 2rem; } .contact-info { flex-direction: column; gap: 10px; }
-button:hover, .btn:hover, a:hover {
-    background-color: darkorange !important;
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
+        /* बटन चमकाने (Hover) का कमाल का इफेक्ट */
+        button:hover, .btn:hover, a:hover {
+            background-color: darkorange !important;
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        button, .btn, a {
+            transition: all 0.3s ease-in-out;
+        }
 
-/* इफेक्ट को स्मूथ बनाने के लिए */
-button, .btn, a {
-    transition: all 0.3s ease-in-out;
-}        
+        @media (max-width: 650px) {
+            .container { padding: 25px; }
+            header h1 { font-size: 2.2rem; }
+            .english-name { font-size: 1.5rem; }
+            .contact-info { flex-direction: column; gap: 10px; }
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
     <header>
-        <img src="myphoto.jpeg" alt="रनूप कुमार" class="profile-img">
-        <h1>रनूप कुमार</h1>
-        <p>Welcome to my Portfolio | मेरे डिजिटल प्रोफाइल पर आपका स्वागत है</p>
-        <div class="contact-info">
-            <div class="contact-item">📧 <a href="mailto:ranoop.kumarpandit@gmail.com" class="contact-link">ranoop.kumarpandit@gmail.com</a></div>
-            <div class="contact-item">📱 <a href="tel:+919816860061" class="contact-link">+91 98168 60061</a></div>
+        <img src="myphoto.jpeg" alt="रणूप कुमार" class="profile-img">
+        <h1>रणूप कुमार</h1>
+        <div class="english-name">Ranoop Kumar</div>
+        <p>Welcome to my Portfolio | मेरे डिजिटल प्रोफ़ाइल पर आपका स्वागत है</p>
+        
+        <div class="contact-info" style="margin-top: 15px;">
+            <a href="mailto:ranoop.kumarpandit@gmail.com" style="margin-right: 15px; text-decoration: none; color: #2b6cb0;">ranoop.kumarpandit@gmail.com</a>
+            <a href="tel:+919016060061" style="text-decoration: none; color: #2b6cb0;">+91 90160 60061</a>
         </div>
     </header>
 
-    <section>
-        <h2>Work Experience (कार्य अनुभव)</h2>
-        
-        <div class="card">
-            <div class="item-title">1. Supervisor</div>
-            <div class="item-subtitle"><span>Eastman Auto & Power Ltd.</span> <span>Baddi, Solan (H.P.)</span></div>
-            <ul>
-                <li>Managed daily assembly line operations and team workflow.</li>
-                <li>Ensured strict quality control and safety standards.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <div class="item-title">2. Store Assistant</div>
-            <div class="item-subtitle"><span>Surya Cons Private Limited</span> <span>Teesta W.B. Railway Project</span></div>
-            <ul>
-                <li>Maintained accurate inventory and stock management records.</li>
-                <li>Handled incoming and outgoing materials for the railway project.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <div class="item-title">3. Dispatcher</div>
-            <div class="item-subtitle"><span>RMC Pvt. Ltd.</span> <span>Amritsar, Punjab</span></div>
-            <ul>
-                <li>Coordinated logistics and planned vehicle dispatch schedules.</li>
-                <li>Managed dispatch logs and ensured timely deliveries.</li>
-            </ul>
-        </div>
+    <!-- संपर्क फ़ॉर्म सेक्शन -->
+    <section id="contact">
+        <h2>CONTACT ME</h2>
+        <form action="https://formspree.io" method="POST">
+            <div class="card">
+                <div style="margin-bottom: 15px;">
+                    <label for="name" style="display:block; margin-bottom:5px; font-weight:600;">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required style="width:100%; padding:10px; border:1px solid #e2e8f0; border-radius:6px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="message" style="display:block; margin-bottom:5px; font-weight:600;">Your Message:</label>
+                    <textarea id="message" name="message" placeholder="Write message here" required style="width:100%; padding:10px; border:1px solid #e2e8f0; border-radius:6px; height:100px;"></textarea>
+                </div>
+                <button type="submit" class="btn fb" style="width:100%; margin:0;">Submit Message</button>
+            </div>
+        </form>
     </section>
 
-    <section>
-        <h2>Technical & Computer Skills (कंप्यूटर ज्ञान)</h2>
-        <div class="skills-grid">
-            <div class="skill-tag">Microsoft Office (Word & Excel)</div>
-            <div class="skill-tag">Advanced Data Entry Operations</div>
-            <div class="skill-tag">Inventory & Stock Records Management</div>
-            <div class="skill-tag">Software Applications Handling</div>
-            <div class="skill-tag">Internet & Corporate Email Communication</div>
-            <div class="skill-tag">Logistics & Vehicle Coordinating Software</div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Education & Certifications (शिक्षा)</h2>
-        
-        <div class="card">
-            <div class="item-title">Diploma in Software Technology & Application</div>
-            <div class="item-subtitle"><span>VKCC - Vishw Kirti Computer Center, Chamba (H.P.)</span> <span>Grade: A+ (2005 - 2006)</span></div>
-        </div>
-
-        <div class="card">
-            <div class="item-title">Vocational Course Certificate (Art & Craft)</div>
-            <div class="item-subtitle"><span>State Council for Vocational Training, Hamirpur (H.P.)</span> <span>Year: 2008</span></div>
-        </div>
-
-        <div class="card">
-            <div class="item-title">12th Pass (Higher Secondary Education)</div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Languages Known (भाषा ज्ञान)</h2>
-        <div class="lang-list">
-            <div class="lang-item">Hindi <span>मातृभाषा (Native)</span></div>
-            <div class="lang-item">English <span>व्यावसायिक समझ (Professional)</span></div>
-            <div class="lang-item">Himachali <span>बोलचाल (Spoken)</span></div>
-            <div class="lang-item">Punjabi <span>बोलचाल और समझ (Spoken)</span></div>
-        </div>
-    </section>
-
-   <h2 style="text-align: center; color: darkblue; margin-top: 40px;">MY CERTIFICATES</h2>
-<div style="text-align: center; margin: 20px auto;">
-    <a href="diploma.pdf" download style="background-color: #22c55e; color: white; padding: 12px 25px; border-radius: 25px; font-size: 18px; font-weight: bold; text-decoration: none; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer;">
-        📄 Download Computer Diploma (PDF)
-    </a>
-</div>
-
-<h2 style="text-align: center; color: darkblue; margin-top: 40px;">CONTACT ME</h2>
-<div style="text-align: center; background: white; padding: 20px; border-radius: 8px; max-width: 500px; margin: 20px auto; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-        <form action="https://formspree.io/f/xkjogblp" method="POST">
-        <label><b>Your Name:</b></label><br>
-        <input type="text" name="name" placeholder="Enter your name" style="padding: 8px; margin: 8px 0; width: 80%; border-radius: 4px; border: 1px solid #ccc;" required><br>
-        <label><b>Your Message:</b></label><br>
-        <textarea name="message" placeholder="Write message here" style="padding: 8px; margin: 8px 0; width: 80%; height: 80px; border-radius: 4px; border: 1px solid #ccc;" required></textarea><br>
-        <button type="submit" style="background-color: darkblue; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-top: 10px;">Send Message</button>
-    </form>
-</div>
-   
-   
+    <!-- सोशल लिंक्स -->
     <div class="social-links">
-        <a href="https://facebook.com" target="_blank" class="btn fb">Facebook Profile</a>
-        <a href="https://wa.me" target="_blank" class="btn wa">WhatsApp Chat</a>
+        <a href="https://facebook.com" class="btn fb" target="_blank">Facebook Profile</a>
+        <a href="https://wa.me" class="btn wa" target="_blank">WhatsApp Chat</a>
     </div>
 </div>
 
