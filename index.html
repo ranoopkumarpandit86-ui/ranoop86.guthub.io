@@ -6,61 +6,87 @@
     <title>रनूप कुमार - प्रोफेशनल पोर्टफोलियो</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; background-color: #f4f7f6; color: #333; padding: 20px; }
-        .container { max-width: 800px; margin: 0 auto; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        header { text-align: center; border-bottom: 3px solid #007bff; padding-bottom: 20px; margin-bottom: 30px; }
-        header h1 { color: #007bff; font-size: 2.2rem; margin-bottom: 10px; }
-        header p { font-size: 1.1rem; color: #666; margin-bottom: 10px; }
-        .contact-info { margin-top: 10px; font-size: 1rem; color: #444; }
-        .contact-link { color: #007bff; text-decoration: none; font-weight: bold; }
-        .contact-link:hover { text-underline-position: under; text-decoration: underline; }
-        h2 { color: #007bff; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 30px; margin-bottom: 15px; font-size: 1.5rem; }
-        .item { margin-bottom: 20px; }
-        .item-title { font-weight: bold; font-size: 1.1rem; color: #222; display: flex; justify-content: space-between; flex-wrap: wrap; }
-        .item-subtitle { font-style: italic; color: #666; font-size: 0.95rem; margin-bottom: 5px; }
-        ul { list-style-type: square; margin-left: 20px; color: #444; }
-        li { margin-bottom: 5px; }
-        .social-links { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; }
-        .btn { display: inline-block; padding: 10px 20px; margin: 5px; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
-        .fb { background-color: #1877f2; }
-        .wa { background-color: #25d366; }
-        .btn:hover { opacity: 0.9; }
-        @media (max-width: 600px) { .item-title { flex-direction: column; } }
+        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; line-height: 1.6; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); color: #2d3748; padding: 30px 20px; min-height: 100vh; }
+        .container { max-width: 850px; margin: 0 auto; background: #ffffff; padding: 50px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); border-top: 8px solid #1a365d; }
+        
+        header { text-align: center; margin-bottom: 40px; padding-bottom: 30px; border-bottom: 2px dashed #e2e8f0; }
+        .profile-img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 5px solid #fff; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease; }
+        .profile-img:hover { transform: scale(1.05); }
+        
+        header h1 { color: #1a365d; font-size: 2.5rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.5px; }
+        header p { font-size: 1.15rem; color: #4a5568; font-weight: 500; margin-bottom: 15px; }
+        
+        .contact-info { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; margin-top: 15px; }
+        .contact-item { background: #f7fafc; padding: 8px 18px; border-radius: 30px; font-size: 0.95rem; border: 1px solid #e2e8f0; display: flex; align-items: center; gap: 8px; }
+        .contact-link { color: #2b6cb0; text-decoration: none; font-weight: 600; }
+        .contact-link:hover { text-decoration: underline; }
+        
+        h2 { color: #1a365d; font-size: 1.6rem; font-weight: 700; margin-top: 40px; margin-bottom: 20px; display: flex; align-items: center; border-left: 5px solid #2b6cb0; padding-left: 12px; }
+        
+        .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition: all 0.3s ease; }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.05); border-color: #cbd5e0; }
+        
+        .item-title { font-weight: 700; font-size: 1.2rem; color: #2d3748; margin-bottom: 4px; }
+        .item-subtitle { color: #718096; font-size: 0.95rem; font-weight: 500; margin-bottom: 12px; display: flex; justify-content: space-between; flex-wrap: wrap; }
+        
+        ul { list-style: none; }
+        ul li { position: relative; padding-left: 20px; margin-bottom: 8px; color: #4a5568; font-size: 1rem; }
+        ul li::before { content: "▪️"; color: #2b6cb0; position: absolute; left: 0; top: -1px; font-size: 1.2rem; }
+        
+        .skills-grid { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 15px; }
+        .skill-tag { background: linear-gradient(135deg, #ebf8ff 0%, #cee7ff 100%); color: #2b6cb0; padding: 8px 18px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; border: 1px solid #bee3f8; transition: all 0.2s; }
+        .skill-tag:hover { background: #2b6cb0; color: #fff; }
+        
+        .lang-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; }
+        .lang-item { background: #f7fafc; padding: 12px; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; font-weight: 600; }
+        .lang-item span { display: block; font-size: 0.85rem; color: #718096; font-weight: 400; margin-top: 4px; }
+        
+        .social-links { text-align: center; margin-top: 50px; padding-top: 30px; border-top: 2px solid #e2e8f0; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 35px; margin: 8px; color: white; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: all 0.3s ease; }
+        .fb { background: #1877f2; }
+        .wa { background: #25d366; }
+        .btn:hover { opacity: 0.95; transform: translateY(-3px); box-shadow: 0 6px 15px rgba(0,0,0,0.2); }
+        
+        @media (max-width: 650px) { .container { padding: 25px; } header h1 { font-size: 2rem; } .contact-info { flex-direction: column; gap: 10px; } }
     </style>
 </head>
 <body>
 
 <div class="container">
     <header>
-        <h1>रनूप कुमार (Ranoop Kumar)</h1>
-        <p>आपका मेरी वेबसाइट पर स्वागत है | Welcome to my Portfolio</p>
+        <img src="myphoto.jpeg" alt="रनूप कुमार" class="profile-img">
+        <h1>रनूप कुमार</h1>
+        <p>Welcome to my Portfolio | मेरे डिजिटल प्रोफाइल पर आपका स्वागत है</p>
         <div class="contact-info">
-            <p>📧 Email: <a href="mailto:ranoop.kumarpandit@gmail.com" class="contact-link">ranoop.kumarpandit@gmail.com</a></p>
-            <p>📱 Mobile: <a href="tel:+919816860061" class="contact-link">+91 98168 60061</a></p>
+            <div class="contact-item">📧 <a href="mailto:ranoop.kumarpandit@gmail.com" class="contact-link">ranoop.kumarpandit@gmail.com</a></div>
+            <div class="contact-item">📱 <a href="tel:+919816860061" class="contact-link">+91 98168 60061</a></div>
         </div>
     </header>
 
     <section>
-        <h2>Professional Experience (कार्य अनुभव)</h2>
-        <div class="item">
+        <h2>Work Experience (कार्य अनुभव)</h2>
+        
+        <div class="card">
             <div class="item-title">1. Supervisor</div>
-            <div class="item-subtitle">Eastman Auto & Power Ltd., Baddi, Solan (H.P.)</div>
+            <div class="item-subtitle"><span>Eastman Auto & Power Ltd.</span> <span>Baddi, Solan (H.P.)</span></div>
             <ul>
                 <li>Managed daily assembly line operations and team workflow.</li>
                 <li>Ensured strict quality control and safety standards.</li>
             </ul>
         </div>
-        <div class="item">
+
+        <div class="card">
             <div class="item-title">2. Store Assistant</div>
-            <div class="item-subtitle">Surya Cons Private Limited, Teesta W.B. Railway Project</div>
+            <div class="item-subtitle"><span>Surya Cons Private Limited</span> <span>Teesta W.B. Railway Project</span></div>
             <ul>
                 <li>Maintained accurate inventory and stock management records.</li>
                 <li>Handled incoming and outgoing materials for the railway project.</li>
             </ul>
         </div>
-        <div class="item">
+
+        <div class="card">
             <div class="item-title">3. Dispatcher</div>
-            <div class="item-subtitle">RMC Pvt. Ltd., Amritsar</div>
+            <div class="item-subtitle"><span>RMC Pvt. Ltd.</span> <span>Amritsar, Punjab</span></div>
             <ul>
                 <li>Coordinated logistics and planned vehicle dispatch schedules.</li>
                 <li>Managed dispatch logs and ensured timely deliveries.</li>
@@ -69,29 +95,43 @@
     </section>
 
     <section>
-        <h2>Education & Certifications (शिक्षा)</h2>
-        <div class="item">
-            <div class="item-title">Diploma in Software Technology & Application <span>(2005 - 2006)</span></div>
-            <div class="item-subtitle">VKCC - Vishw Kirti Computer Center, Chamba (H.P.) | Grade A+</div>
-        </div>
-        <div class="item">
-            <div class="item-title">Vocational Course Certificate (Art & Craft) <span>(2008)</span></div>
-            <div class="item-subtitle">State Council for Vocational Training, Hamirpur (H.P.)</div>
-        </div>
-        <div class="item">
-            <div class="item-title">12th Pass (Higher Secondary)</div>
+        <h2>Technical & Computer Skills (कंप्यूटर ज्ञान)</h2>
+        <div class="skills-grid">
+            <div class="skill-tag">Microsoft Office (Word & Excel)</div>
+            <div class="skill-tag">Advanced Data Entry Operations</div>
+            <div class="skill-tag">Inventory & Stock Records Management</div>
+            <div class="skill-tag">Software Applications Handling</div>
+            <div class="skill-tag">Internet & Corporate Email Communication</div>
+            <div class="skill-tag">Logistics & Vehicle Coordinating Software</div>
         </div>
     </section>
 
     <section>
-        <h2>Languages (भाषाएं)</h2>
-        <ul>
-            <li>Hindi (Native / मातृभाषा)</li>
-            <li>English (Professional Text Comprehension / व्यावसायिक समझ)</li>
-            <!-- नई भाषाएं यहाँ जोड़ी गई हैं -->
-            <li>Himachali (Spoken / बोलचाल)</li>
-            <li>Punjabi (Spoken & Understanding / बोलचाल और समझ)</li>
-        </ul>
+        <h2>Education & Certifications (शिक्षा)</h2>
+        
+        <div class="card">
+            <div class="item-title">Diploma in Software Technology & Application</div>
+            <div class="item-subtitle"><span>VKCC - Vishw Kirti Computer Center, Chamba (H.P.)</span> <span>Grade: A+ (2005 - 2006)</span></div>
+        </div>
+
+        <div class="card">
+            <div class="item-title">Vocational Course Certificate (Art & Craft)</div>
+            <div class="item-subtitle"><span>State Council for Vocational Training, Hamirpur (H.P.)</span> <span>Year: 2008</span></div>
+        </div>
+
+        <div class="card">
+            <div class="item-title">12th Pass (Higher Secondary Education)</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Languages Known (भाषा ज्ञान)</h2>
+        <div class="lang-list">
+            <div class="lang-item">Hindi <span>मातृभाषा (Native)</span></div>
+            <div class="lang-item">English <span>व्यावसायिक समझ (Professional)</span></div>
+            <div class="lang-item">Himachali <span>बोलचाल (Spoken)</span></div>
+            <div class="lang-item">Punjabi <span>बोलचाल और समझ (Spoken)</span></div>
+        </div>
     </section>
 
     <div class="social-links">
