@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>रनूप कुमार - प्रोफेशनल पोर्टफोलियो</title>
-    <style>
+    <style></style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; line-height: 1.6; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); color: #2d3748; padding: 30px 20px; min-height: 100vh; }
         .container { max-width: 850px; margin: 0 auto; background: #ffffff; padding: 50px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); border-top: 8px solid #1a365d; }
@@ -47,7 +47,17 @@
         .wa { background: #25d366; }
         .btn:hover { opacity: 0.95; transform: translateY(-3px); box-shadow: 0 6px 15px rgba(0,0,0,0.2); }
         
-        @media (max-width: 650px) { .container { padding: 25px; } header h1 { font-size: 2rem; } .contact-info { flex-direction: column; gap: 10px; } }
+        @media (max-width: 650px) { .container { padding: 25px; } header h1 { font-size: 2rem; } .contact-info { flex-direction: column; gap: 10px; }
+button:hover, .btn:hover, a:hover {
+    background-color: darkorange !important;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* इफेक्ट को स्मूथ बनाने के लिए */
+button, .btn, a {
+    transition: all 0.3s ease-in-out;
+}        
     </style>
 </head>
 <body>
